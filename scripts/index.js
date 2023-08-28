@@ -13,7 +13,7 @@ const database = getDatabase(app)
 const shoppingListInDB = ref(database, "shoppingList")
 
 
-
+let flag = true
 
 const inputFieldNode = document.querySelector('#input-field');
 const addToCartBtnNode = document.querySelector('#add-btn');
@@ -58,11 +58,14 @@ function appendItemToShoppingLiest(item) {
   newEl.textContent = itemValue;
   
   newEl.addEventListener('click', () => {
-    let exectLocationOfItemInDB = ref(database, `shoppingList/${itemId}`)
-    
-    remove(exectLocationOfItemInDB)
+    newEl.classList.add('shopping-item-green')
   })
 
+  newEl.addEventListener('dblclick', () => {
+    let exectLocationOfItemInDB = ref(database, `shoppingList/${itemId}`)
+    remove(exectLocationOfItemInDB)
+  })
+  
   shoppingListNode.appendChild(newEl)
 };
 
