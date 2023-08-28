@@ -10,6 +10,11 @@ body {
   background-color: #EEF0F4;
   user-select: none;
 }
+@media (max-width: 767px) {
+  body{
+    background-color: white;
+  }
+}
 
 .container {
   margin: 0 auto;
@@ -27,7 +32,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: fixed;
   gap: 20px;
   margin-bottom: 200px;
   padding-top: 200px;

@@ -22,3 +22,10 @@ button {
   background-color: transparent;
   border: 1px solid #AC485A;
 }
+@media (max-width: 767px) {
+  .add-btn:hover{
+  border: 1px solid transparent;
+  color: #FDFDFD;
+  background-color: #AC485A;
+  }
+}
