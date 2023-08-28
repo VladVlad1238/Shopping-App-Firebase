@@ -21,7 +21,10 @@ const shoppingListNode = document.querySelector('#shopping-list');
 
 
 const getInputValue = () => {
-  const inputValue = inputFieldNode.value;
+  const inputValue = inputFieldNode.value.trim();
+
+  if(!inputValue) return;
+  
 
   push(shoppingListInDB, inputValue);
 
