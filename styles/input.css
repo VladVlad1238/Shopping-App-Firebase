@@ -5,12 +5,13 @@
   text-align: center;
   border: none;
   outline: none;
-  font-size: 15px;
+  font-size: 20px;
   color: #432000;
   background-color: #DCE1EB
 }
 @media (max-width: 767px) {
   .input-field {
     margin-bottom: 10px;
+    font-size: 15px;
   }
 }
