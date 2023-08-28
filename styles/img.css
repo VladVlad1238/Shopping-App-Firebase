@@ -1,0 +1,15 @@
+.cat-img-container {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.cat-img {
+  width: 400px;
+}
+
+@media (max-width: 767px) {
+  .cat-img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+

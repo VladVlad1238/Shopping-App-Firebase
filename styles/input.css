@@ -1,0 +1,16 @@
+.input-field {
+  margin-bottom: 20px;
+  height: 40px;
+  border-radius: 5px;
+  text-align: center;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: #432000;
+  background-color: #DCE1EB
+}
+@media (max-width: 767px) {
+  .input-field {
+    margin-bottom: 10px;
+  }
+}

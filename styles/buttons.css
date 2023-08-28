@@ -1,0 +1,24 @@
+button {
+  font-family: 'Rubik', sans-serif;
+  cursor: pointer;
+}
+.add-btn {
+  margin-bottom: 50px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  font-size: 20px;
+  color: #FDFDFD;
+  background-color: #AC485A;
+}
+@media (max-width: 767px) {
+  .add-btn {
+    margin-bottom: 25px;
+    font-size: 15px;
+  }
+}
+.add-btn:hover {
+  color: #AC485A;
+  background-color: transparent;
+  border: 1px solid #AC485A;
+}
