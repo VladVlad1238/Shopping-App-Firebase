@@ -27,10 +27,10 @@
     font-size: 15px;
   }
 }
-.shopping-item:hover {
+/*.shopping-item:hover {
   background-color: white;
   border: 1px solid rgb(254, 245, 235);
-}
+}*/
 @media (max-width: 767px) {
   .shopping-item:hover {
   background-color: rgb(254, 245, 235);
