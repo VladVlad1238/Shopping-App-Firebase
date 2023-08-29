@@ -59,14 +59,14 @@ function appendItemToShoppingLiest(item) {
   
   newEl.addEventListener('click', () => {
     newEl.classList.add('shopping-item-green')
+      newEl.addEventListener('click', () => {
+        if(newEl.className.match('shopping-item-green')) {
+          let exectLocationOfItemInDB = ref(database, `shoppingList/${itemId}`)
+          remove(exectLocationOfItemInDB)
+        }
+      })
   })
-
-  newEl.addEventListener('dblclick', () => {
-    let exectLocationOfItemInDB = ref(database, `shoppingList/${itemId}`)
-    remove(exectLocationOfItemInDB)
-  })
-  
-  shoppingListNode.appendChild(newEl)
+  shoppingListNode.append(newEl)
 };
 
 const clearShoppingList = () => {
@@ -80,5 +80,6 @@ const clearInputField = () => {
 
 
 addToCartBtnNode.addEventListener('click', getInputValue);
+
 
 
